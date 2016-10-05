@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		CB5E1B261DA4973800754434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B251DA4973800754434 /* AppDelegate.swift */; };
-		CB5E1B281DA4973800754434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B271DA4973800754434 /* ViewController.swift */; };
 		CB5E1B2B1DA4973800754434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5E1B291DA4973800754434 /* Main.storyboard */; };
 		CB5E1B2E1DA4973800754434 /* BeMyPetBasic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B2C1DA4973800754434 /* BeMyPetBasic.xcdatamodeld */; };
 		CB5E1B301DA4973800754434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5E1B2F1DA4973800754434 /* Assets.xcassets */; };
 		CB5E1B331DA4973800754434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5E1B311DA4973800754434 /* LaunchScreen.storyboard */; };
+		CB5E1B3E1DA49C5A00754434 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B3D1DA49C5A00754434 /* CoreDataTableViewController.swift */; };
+		CB5E1B431DA49D3000754434 /* ListaPetsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B421DA49D3000754434 /* ListaPetsController.swift */; };
+		CB5E1B461DA49DF800754434 /* Pet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B441DA49DF800754434 /* Pet+CoreDataClass.swift */; };
+		CB5E1B471DA49DF800754434 /* Pet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B451DA49DF800754434 /* Pet+CoreDataProperties.swift */; };
+		CB5E1B491DA4A14900754434 /* DetalherPetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E1B481DA4A14900754434 /* DetalherPetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB5E1B221DA4973800754434 /* BeMyPetBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeMyPetBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5E1B251DA4973800754434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB5E1B271DA4973800754434 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB5E1B2A1DA4973800754434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB5E1B2D1DA4973800754434 /* BeMyPetBasic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeMyPetBasic.xcdatamodel; sourceTree = "<group>"; };
 		CB5E1B2F1DA4973800754434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5E1B321DA4973800754434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB5E1B341DA4973800754434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5E1B3D1DA49C5A00754434 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		CB5E1B421DA49D3000754434 /* ListaPetsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPetsController.swift; sourceTree = "<group>"; };
+		CB5E1B441DA49DF800754434 /* Pet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CB5E1B451DA49DF800754434 /* Pet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB5E1B481DA4A14900754434 /* DetalherPetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalherPetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		CB5E1B241DA4973800754434 /* BeMyPetBasic */ = {
 			isa = PBXGroup;
 			children = (
+				CB5E1B411DA49CC800754434 /* Pets */,
+				CB5E1B3C1DA4979500754434 /* Storyboard */,
+				CB5E1B3B1DA4977C00754434 /* Core Data */,
+				CB5E1B3A1DA4975F00754434 /* Support Files */,
+			);
+			path = BeMyPetBasic;
+			sourceTree = "<group>";
+		};
+		CB5E1B3A1DA4975F00754434 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				CB5E1B251DA4973800754434 /* AppDelegate.swift */,
-				CB5E1B271DA4973800754434 /* ViewController.swift */,
-				CB5E1B291DA4973800754434 /* Main.storyboard */,
 				CB5E1B2F1DA4973800754434 /* Assets.xcassets */,
 				CB5E1B311DA4973800754434 /* LaunchScreen.storyboard */,
 				CB5E1B341DA4973800754434 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		CB5E1B3B1DA4977C00754434 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB5E1B441DA49DF800754434 /* Pet+CoreDataClass.swift */,
+				CB5E1B451DA49DF800754434 /* Pet+CoreDataProperties.swift */,
+				CB5E1B3D1DA49C5A00754434 /* CoreDataTableViewController.swift */,
 				CB5E1B2C1DA4973800754434 /* BeMyPetBasic.xcdatamodeld */,
 			);
-			path = BeMyPetBasic;
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		CB5E1B3C1DA4979500754434 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB5E1B291DA4973800754434 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		CB5E1B411DA49CC800754434 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				CB5E1B481DA4A14900754434 /* DetalherPetController.swift */,
+				CB5E1B421DA49D3000754434 /* ListaPetsController.swift */,
+			);
+			name = Pets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5E1B281DA4973800754434 /* ViewController.swift in Sources */,
 				CB5E1B2E1DA4973800754434 /* BeMyPetBasic.xcdatamodeld in Sources */,
+				CB5E1B431DA49D3000754434 /* ListaPetsController.swift in Sources */,
+				CB5E1B461DA49DF800754434 /* Pet+CoreDataClass.swift in Sources */,
 				CB5E1B261DA4973800754434 /* AppDelegate.swift in Sources */,
+				CB5E1B491DA4A14900754434 /* DetalherPetController.swift in Sources */,
+				CB5E1B3E1DA49C5A00754434 /* CoreDataTableViewController.swift in Sources */,
+				CB5E1B471DA49DF800754434 /* Pet+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
